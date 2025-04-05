@@ -173,6 +173,7 @@ function createWhiteHat() {
         .attr("fill", "#d1d0c5")
         .style("font-family", "'Source Code Pro', monospace")
         .style("font-size", "12px")
+        .style("text-decoration", "underline")
         .text("Source: OECD Data Explorer")
         .on("click", () => window.open("https://data-explorer.oecd.org/vis?df[ds]=DisseminateFinalDMZ&df[id]=DSD_AIR_GHG%40DF_AIR_GHG&df[ag]=OECD.ENV.EPI&dq=OECDE%2BOECDSO%2BOECDA%2BOECD.A.GHG..KG_CO2E_PS&pd=2000%2C2022&to[TIME_PERIOD]=false", "_blank"))
         .style("cursor", "pointer");
@@ -303,6 +304,7 @@ function createBlackHat() {
         .attr("fill", "#d1d0c5")
         .style("font-family", "'Source Code Pro', monospace")
         .style("font-size", "12px")
+        .style("text-decoration", "underline")
         .text("Source: OECD Data Explorer")
         .on("click", () => window.open("https://data-explorer.oecd.org/vis?df[ds]=DisseminateFinalDMZ&df[id]=DSD_AIR_GHG%40DF_AIR_GHG&df[ag]=OECD.ENV.EPI&dq=GBR%2BTUR%2BCHE%2BSWE%2BSVN%2BESP%2BSVK%2BPOL%2BPRT%2BNOR%2BNZL%2BNLD%2BMEX%2BLUX%2BLTU%2BLVA%2BKOR%2BJPN%2BITA%2BISR%2BIRL%2BISL%2BHUN%2BGRC%2BDEU%2BFRA%2BFIN%2BEST%2BDNK%2BCZE%2BCRI%2BCOL%2BCHL%2BCAN%2BBEL%2BAUT%2BAUS%2BUSA.A.GHG._T%2BT_LULU.KG_CO2E_PS&pd=2000%2C2022&to[TIME_PERIOD]=false", "_blank"))
         .style("cursor", "pointer");
@@ -367,7 +369,7 @@ function setupToggleButtons() {
             vizContainer.appendChild(vizContent);
         }
 
-        // White Hat Writeup
+        // Writeup Content
         let writeupContent = vizContainer.querySelector('.writeup-content');
         if (!writeupContent) {
             writeupContent = document.createElement('div');
