@@ -1,0 +1,142 @@
+html, body {
+    background-color: #323537;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    color: #d1d0c5;
+    border: 1px solid #5b6065;
+}
+
+.authors-container {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.authors-text {
+    font-weight: bold;
+}
+
+.authors-name {
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.visualization-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.viz-container {
+    width: 50%;
+    height: 100%;
+    border: 1px solid #5b6065;
+    transition: border 0.3s ease;
+}
+
+.viz-header {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #5b6065;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    color: #d1d0c5;
+    transition: border-bottom 0.3s ease;
+}
+
+.viz-misc-text {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.white-hat {
+    color: #ffffff;
+    user-select: none;
+}
+
+.black-hat {
+    color: #949fa7;
+    user-select: none;
+}
+
+.writeup-button {
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
+    color: #d1d0c5;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.writeup-button:hover {
+    color: #f7c83b;
+}
+
+.viz-container:hover {
+    border: 1px solid #9ca6b0;
+}
+
+.viz-container:hover .viz-header {
+    border-bottom: 1px solid #9ca6b0;
+}
+
+.viz-writeup-container {
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.viz-content {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.writeup-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: transparent;
+    color: #d1d0c5;
+    font-family: 'Source Code Pro', monospace;
+    overflow-y: scroll;
+}
+
+.writeup-text {
+    width: 100%;
+    height: 100%;
+    display: block; /* Changed from flex to block to stack paragraphs vertically */
+    gap: 10px;
+    background-color: #323437;
+    overflow-y: auto;
+}
+
+.writeup-text p {
+    line-height: 1.6;
+    margin-bottom: 10px; /* Added margin to create gap between paragraphs */
+}

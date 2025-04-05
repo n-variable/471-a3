@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emissions Data Visualization (White Hat / Black Hat)</title>
+    <script src="https://kit.fontawesome.com/e3e0b6c733.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css" rel="stylesheet">
+    <link type="image/png" sizes="16x16" rel="icon" href="https://img.icons8.com/?size=96&id=zpGAZ4jdOo3u&format=png">
+</head>
+<body>
+    <header class="header">
+        <a style="font-weight: bold;">Emissions Data Visualization (White Hat / Black Hat)</a>
+        <div class="authors-container">
+            <a class="authors-text">Authors: </a>
+            <a class="authors-name">Pranav Hegde</a>
+        </div>
+    </header>
+    <div class="visualization-container">
+        <div class="viz-container">
+            <div class="viz-header">
+                <a>GHG Emission Reduction by OECD Region</a>
+                <div class="viz-misc-text">
+                    <a class="white-hat"><i class="fa-solid fa-hat-cowboy"></i> White Hat</a>
+                    <button class="writeup-button">Read Writeup</button>
+                </div>
+            </div>
+            <div class="viz-content">
+                <div id="white-hat-viz" style="width: 100%; height: 100%;"></div>
+            </div>
+        </div>
+        <div class="viz-container">
+            <div class="viz-header">
+                Largest International Polluters
+                <div class="viz-misc-text">
+                    <a class="black-hat"><i class="fa-solid fa-hat-cowboy"></i> Black Hat</a>
+                    <button class="writeup-button">Read Writeup</button>
+                </div>
+            </div>
+            <div class="viz-content">
+                <div id="black-hat-viz" style="width: 100%; height: 100%;"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Load D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+    <script>
+
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
