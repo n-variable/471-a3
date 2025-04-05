@@ -293,7 +293,7 @@ function createBlackHat() {
         .style("border-radius", "5px")
         .style("font-family", "'Source Code Pro', monospace")
         .style("opacity", 0)
-        .style("z-index", -5);
+        .style("pointer-events", "none");
 
     // Add source link
     svg.append("text")
